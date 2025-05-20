@@ -2,6 +2,7 @@
 **An AI-Powered Cart System for Real-Time Product Recommendation and Indoor Localization**
 
 ---
+Link Source Code: https://drive.google.com/drive/folders/18tfUIDvszxptnRjmOsFoRpV3RqRvh5jq?usp=sharing
 
 ## Các điểm cải thiện sau lần trình bày 1
 
