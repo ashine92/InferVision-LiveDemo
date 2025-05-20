@@ -81,21 +81,21 @@ rssi1,rssi2,rssi3,label
 ![image](https://github.com/user-attachments/assets/c63075be-b7ff-49fb-9de0-18da2dc7721c)
 
 #### 2.2 Local Inference (Ubuntu Terminal)
-- Mô phỏng quá trình inference trên thiết bị biên (MCU-like).
+Mô phỏng quá trình inference trên thiết bị biên (MCU-like).
 - Các bước thực hiện:
-1. Clone repo mẫu từ Edge Impulse:
-   `git clone https://github.com/edgeimpulse/example-standalone-inferencing.git`
-2. Build thư viện mô hình:
-- Truy cập Project trên Edge Impulse → Deployment → chọn C++ library → Build.
-- Giải nén .zip vào `example-standalone-inferencing/`
-3. Chèn dữ liệu mẫu vào `main.cpp`:
-- Mở `source/main.cpp`
-- Tìm dòng `/* Paste features here */` và dán dữ liệu đầu vào.
-- Build và chạy mô phỏng inference:
-```
-sh build.sh
-./build/app
-```
+   1. Clone repo mẫu từ Edge Impulse:
+      `git clone https://github.com/edgeimpulse/example-standalone-inferencing.git`
+   2. Build thư viện mô hình:
+      - Truy cập Project trên Edge Impulse → Deployment → chọn C++ library → Build.
+      - Giải nén .zip vào `example-standalone-inferencing/`
+   3. Chèn dữ liệu mẫu vào `main.cpp`:
+      - Mở `source/main.cpp`
+      - Tìm dòng `/* Paste features here */` và dán dữ liệu đầu vào.
+      - Build và chạy mô phỏng inference:
+      ```
+      sh build.sh
+      ./build/app
+      ```
 ![image](https://github.com/user-attachments/assets/fe29f6cb-339c-4333-a60b-a76830dca31c)
 
 ### 3. Build và Flash lên EFR32MG24 (Simplicity Studio 5)
