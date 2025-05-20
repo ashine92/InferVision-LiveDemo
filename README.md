@@ -49,7 +49,7 @@ Link Source Code: https://drive.google.com/drive/folders/18tfUIDvszxptnRjmOsFoRp
 | Tensor Arena RAM              | ~216.3 KB                 | ~1.7 KB                      | 256 KB RAM                    |
 | Inference time                | ~408 ms                   | ~1 ms                        | Cortex-M33 @ 78 MHz           |
 | Tổng bộ nhớ sử dụng           | ~949.8 KB (Flash + RAM)   | ~28.3 KB (Flash + RAM)       | 1630 KB tổng (Flash + RAM)   |
-| Ước lượng điện năng tiêu thụ  | ~3.5 mJ / inference       | ~0.0085 mJ / inference       | ~2.6 mA @ 3.3V                |
+| Ước lượng điện năng tiêu thụ  | ~3.5 mJ / inference       | ~0.0085 mJ / inference       | EM0: 33.3 µA/MHz -> 2.6 mA @ 78MHz. Tương đương với mức năng lượng tiêu thụ khi cấp nguồn 3.3V là ~3.5mJ|
 
 ---
 ## Live Demo: 
