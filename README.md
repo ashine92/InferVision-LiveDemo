@@ -69,7 +69,7 @@ Mô hình BLE Localization:
 #### 1.2 RSSI
 - 3 BLE Beacon phát tín hiệu (ESP32) -> Ghi lại RSSI từ 3 beacon tại từng vị trí (khoảng 50 mẫu mỗi vị trí)
 
-- 1 thiết bị thu RSSI: ESP32 -> Quét BLE
+- 1 thiết bị thu RSSI: ESP32 -> Quét BLE (Demo) 
 
 - Lưu lại thành file `.csv` để huấn luyện:
 ```
@@ -83,15 +83,31 @@ rssi1,rssi2,rssi3,label
 ### 1. Web Dashboard (Edge Impulse)
 - Hiển thị trực quan mô hình BLE và KWS.
 - Test mô hình trong tab **Model Testing**.
+![image](https://github.com/user-attachments/assets/c63075be-b7ff-49fb-9de0-18da2dc7721c)
 
 ### 2. Local Inference (Ubuntu Terminal)
 - Mô phỏng quá trình inference trên thiết bị biên (MCU-like).
 - Các bước thực hiện:
-```bash
-cd demo
-nano main.cpp   # Chỉnh sửa raw features của input
-sh build.sh     # Biên dịch chương trình
-./build/app     # Chạy chương trình mô phỏng inference
+1. Clone repo mẫu từ Edge Impulse:
+   `git clone https://github.com/edgeimpulse/example-standalone-inferencing.git`
+2. Build thư viện mô hình:
+- Truy cập Project trên Edge Impulse → Deployment → chọn C++ library → Build.
+- Giải nén .zip vào `example-standalone-inferencing/`
+3. Chèn dữ liệu mẫu vào `main.cpp`:
+- Mở `source/main.cpp`
+- Tìm dòng `/* Paste features here */` và dán dữ liệu đầu vào.
+- Build và chạy mô phỏng inference:
 ```
+sh build.sh
+./build/app
+```
+![image](https://github.com/user-attachments/assets/fe29f6cb-339c-4333-a60b-a76830dca31c)
 
-### 3. 
+### 3. Build và Flash lên EFR32MG24 (Simplicity Studio 5)
+✅ Note: Phải có phần cứng nhưng cách làm giống như build ở local inference.
+
+Reference: 
+1. Hướng dẫn quy trình triển khai ML/AI bằng Edge Impulse Studio với xG24 Dev Kit Silabs: https://github.com/edgeimpulse/workshop-silabs-xg24-dev-kit
+2. Edge Impulse Documentation: https://docs.edgeimpulse.com/docs
+3. Simplicity Studio 5 Documentation: https://docs.silabs.com/simplicity-studio-5-users-guide/5.3.0/ss-5-users-guide-overview/
+4. Build và flash xG24: https://github.com/edgeimpulse/firmware-silabs-xg24
