@@ -31,11 +31,11 @@
 
 > ✅ Cả hai mô hình đã được convert và quantized (INT8) để tương thích với CMSIS-NN và TFLite Micro cho vi điều khiển EFR32MG24 (Cortex-M33, 78 MHz).
 
-Mô hình Keyword Spotting:
+### Mô hình Keyword Spotting:
 
 ![image](https://github.com/user-attachments/assets/236229ac-9eaf-4d05-b535-cfda9748d42d)
 
-Mô hình BLE Localization:
+### Mô hình BLE Localization:
 
 ![image](https://github.com/user-attachments/assets/5d473b38-46b4-4dfe-9518-3722990882cd)
 
@@ -50,6 +50,7 @@ Mô hình BLE Localization:
 | Tổng bộ nhớ sử dụng           | ~949.8 KB (Flash + RAM)   | ~28.3 KB (Flash + RAM)       | 1630 KB tổng (Flash + RAM)   |
 | Ước lượng điện năng tiêu thụ  | ~3.5 mJ / inference       | ~0.0085 mJ / inference       | ~2.6 mA @ 3.3V                |
 
+---
 ## Live Demo: 2 chức năng song song
 ### 1. Cách thu thập dữ liệu:
 #### 1.1 Giọng nói
