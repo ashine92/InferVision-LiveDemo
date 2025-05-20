@@ -19,8 +19,8 @@ Link Source Code: https://drive.google.com/drive/folders/18tfUIDvszxptnRjmOsFoRp
 
 | Loại dữ liệu        | Số lượng    | Nguồn thu thập                         |
 |---------------------|-------------|----------------------------------------|
-| Giọng nói (KWS)     | 1350 mẫu    | Tự thu thập bằng micro thực tế         |
-| RSSI BLE            | 1165 mẫu    | Tự thu từ 3 beacon tại 6 vị trí khác nhau |
+| Giọng nói (KWS)     | 1688 mẫu    | Tự thu thập bằng micro thực tế         |
+| RSSI BLE            | 1448 mẫu    | Tự thu từ 3 beacon tại 6 vị trí khác nhau |
 | Dữ liệu sản phẩm    | >50 sản phẩm| Doanh nghiệp cung cấp (giá, tên, ID...) |
 
 ## Mô hình AI sử dụng
