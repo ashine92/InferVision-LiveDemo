@@ -51,7 +51,7 @@
 | Ước lượng điện năng tiêu thụ  | ~3.5 mJ / inference       | ~0.0085 mJ / inference       | ~2.6 mA @ 3.3V                |
 
 ---
-## Live Demo: 2 chức năng song song
+## Live Demo: 
 ### 1. Cách thu thập dữ liệu:
 #### 1.1 Giọng nói
 - Sử dụng ứng dụng ghi âm (Voice Recorder) trên điện thoại/laptop.
