@@ -3,7 +3,7 @@
 
 ---
 
-## 📝 Các điểm cải thiện sau lần trình bày 1
+## Các điểm cải thiện sau lần trình bày 1
 
 | Vấn đề ban đầu                            | Giải pháp cập nhật                                                 |
 |------------------------------------------|--------------------------------------------------------------------|
@@ -14,9 +14,7 @@
 | ❌ Chưa rõ thuật toán BLE & KWS          | ✅ BLE dùng MLP, KWS dùng MobileNetV2 đã quantized INT8            |
 | ❌ Có nút “Out-of-Stock” thừa trong User Flow | ✅ Đã loại bỏ khỏi sơ đồ luồng người dùng                         |
 
----
-
-## 📊 Dataset
+## Dataset
 
 | Loại dữ liệu        | Số lượng    | Nguồn thu thập                         |
 |---------------------|-------------|----------------------------------------|
@@ -24,9 +22,7 @@
 | RSSI BLE            | 1165 mẫu    | Tự thu từ 3 beacon tại 6 vị trí khác nhau |
 | Dữ liệu sản phẩm    | >50 sản phẩm| Doanh nghiệp cung cấp (giá, tên, ID...) |
 
----
-
-## 🧠 Mô hình AI sử dụng
+## Mô hình AI sử dụng
 
 | Tác vụ               | Mô hình             | Chi tiết kỹ thuật                                     |
 |----------------------|---------------------|--------------------------------------------------------|
@@ -44,9 +40,7 @@ Mô hình BLE Localization:
 ![image](https://github.com/user-attachments/assets/5d473b38-46b4-4dfe-9518-3722990882cd)
 
 
----
-
-## 📉 So sánh tài nguyên hệ thống
+## So sánh tài nguyên hệ thống
 
 | Tiêu chí                      | KWS (TFLite)              | BLE (MLP)                    | MG24 MCU                      |
 |-------------------------------|---------------------------|------------------------------|-------------------------------|
@@ -56,9 +50,7 @@ Mô hình BLE Localization:
 | Tổng bộ nhớ sử dụng           | ~949.8 KB (Flash + RAM)   | ~28.3 KB (Flash + RAM)       | 1630 KB tổng (Flash + RAM)   |
 | Ước lượng điện năng tiêu thụ  | ~3.5 mJ / inference       | ~0.0085 mJ / inference       | ~2.6 mA @ 3.3V                |
 
----
-
-## 🧪 Live Demo: 2 chức năng song song
+## Live Demo: 2 chức năng song song
 ### 1. Cách thu thập dữ liệu:
 #### 1.1 Giọng nói
 - Sử dụng ứng dụng ghi âm (Voice Recorder) trên điện thoại/laptop.
@@ -80,12 +72,13 @@ rssi1,rssi2,rssi3,label
 -65,-90,-70,checkout
 ```
 
-### 1. Web Dashboard (Edge Impulse)
+### 2. Hiển thị kết quả
+#### 2.1 Web Dashboard (Edge Impulse)
 - Hiển thị trực quan mô hình BLE và KWS.
 - Test mô hình trong tab **Model Testing**.
 ![image](https://github.com/user-attachments/assets/c63075be-b7ff-49fb-9de0-18da2dc7721c)
 
-### 2. Local Inference (Ubuntu Terminal)
+#### 2.2 Local Inference (Ubuntu Terminal)
 - Mô phỏng quá trình inference trên thiết bị biên (MCU-like).
 - Các bước thực hiện:
 1. Clone repo mẫu từ Edge Impulse:
@@ -106,8 +99,9 @@ sh build.sh
 ### 3. Build và Flash lên EFR32MG24 (Simplicity Studio 5)
 ✅ Note: Phải có phần cứng nhưng cách làm giống như build ở local inference.
 
-Reference: 
+---
+# Reference: 
 1. Hướng dẫn quy trình triển khai ML/AI bằng Edge Impulse Studio với xG24 Dev Kit Silabs: https://github.com/edgeimpulse/workshop-silabs-xg24-dev-kit
-2. Edge Impulse Documentation: https://docs.edgeimpulse.com/docs
-3. Simplicity Studio 5 Documentation: https://docs.silabs.com/simplicity-studio-5-users-guide/5.3.0/ss-5-users-guide-overview/
-4. Build và flash xG24: https://github.com/edgeimpulse/firmware-silabs-xg24
+2. Build và flash xG24: https://github.com/edgeimpulse/firmware-silabs-xg24
+3. Edge Impulse Documentation: https://docs.edgeimpulse.com/docs
+4. Simplicity Studio 5 Documentation: https://docs.silabs.com/simplicity-studio-5-users-guide/5.3.0/ss-5-users-guide-overview/
