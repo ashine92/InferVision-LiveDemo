@@ -59,7 +59,7 @@ Link Source Code: https://drive.google.com/drive/folders/18tfUIDvszxptnRjmOsFoRp
 
 - Ghi lại từng từ khóa, mỗi từ lặp lại ~30–50 lần (từ nhiều người, nhiều môi trường).
 
-- Lưu dưới định dạng `.wav`, tần số lấy mẫu 16kHz, mono
+- Lưu dưới định dạng `.wav`, tần số lấy mẫu 16kHz, mono, sample length = 1s
 #### 1.2 RSSI
 - 3 BLE Beacon phát tín hiệu (ESP32) -> Ghi lại RSSI từ 3 beacon tại từng vị trí (khoảng 50 mẫu mỗi vị trí)
 
