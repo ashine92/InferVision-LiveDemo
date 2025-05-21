@@ -5,8 +5,12 @@
 Link Source Code: https://drive.google.com/drive/folders/18tfUIDvszxptnRjmOsFoRpV3RqRvh5jq?usp=sharing
 
 ## Trả lời câu hỏi
-![image](https://github.com/user-attachments/assets/f0f3fcda-3d45-4994-95fc-1fbcd7f13c1c)
-
+1. Kiểu thuật toán định vị BLE là gì? Định vị như thế nào? Ưu tiên nhất là gì?
+2. Kiểu thuật toán cho giọng nói là gì?
+3. Sơ đồ khối tổng quát cho hệ thống IoT
+4. WiFi sử dụng module gì? 
+5. AI được ứng dụng ở phần nào trong đề tài?
+   
 ## Các điểm cải thiện sau lần trình bày 1
 
 | Vấn đề ban đầu                            | Giải pháp cập nhật                                                 |
@@ -17,6 +21,9 @@ Link Source Code: https://drive.google.com/drive/folders/18tfUIDvszxptnRjmOsFoRp
 | ❌ Vai trò Wi-Fi module chưa rõ          | ✅ Ghi log người dùng, OTA, kết nối hệ thống                       |
 | ❌ Chưa rõ thuật toán BLE & KWS          | ✅ BLE dùng MLP, KWS dùng MobileNetV2 đã quantized INT8            |
 | ❌ Có nút “Out-of-Stock” thừa trong User Flow | ✅ Đã loại bỏ khỏi sơ đồ luồng người dùng                         |
+
+## Sơ đồ khối tổng quát
+![image](https://github.com/user-attachments/assets/0346a42d-7dbd-44d6-bc70-5627c121043f)
 
 ## Dataset
 
