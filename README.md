@@ -107,3 +107,4 @@ Mô phỏng quá trình inference trên thiết bị biên (MCU-like).
 2. Build và flash xG24: https://github.com/edgeimpulse/firmware-silabs-xg24
 3. Edge Impulse Documentation: https://docs.edgeimpulse.com/docs
 4. Simplicity Studio 5 Documentation: https://docs.silabs.com/simplicity-studio-5-users-guide/5.3.0/ss-5-users-guide-overview/
+5. Build a ESP32 based Bluetooth iBeacon: https://circuitdigest.com/microcontroller-projects/esp32-based-bluetooth-ibeacon
