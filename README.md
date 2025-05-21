@@ -4,6 +4,9 @@
 ---
 Link Source Code: https://drive.google.com/drive/folders/18tfUIDvszxptnRjmOsFoRpV3RqRvh5jq?usp=sharing
 
+## Trả lời câu hỏi
+![image](https://github.com/user-attachments/assets/f0f3fcda-3d45-4994-95fc-1fbcd7f13c1c)
+
 ## Các điểm cải thiện sau lần trình bày 1
 
 | Vấn đề ban đầu                            | Giải pháp cập nhật                                                 |
